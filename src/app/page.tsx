@@ -1,7 +1,6 @@
 import Nav from '@/components/Nav';
 import Hero from '@/components/Hero';
 import Marquee from '@/components/Marquee';
-import FeatureImage from '@/components/FeatureImage';
 import About from '@/components/About';
 import Menu from '@/components/Menu';
 import Catering from '@/components/Catering';
@@ -17,7 +16,6 @@ export default function Home() {
       <main>
         <Hero />
         <Marquee />
-        <FeatureImage />
         <About />
         <Menu />
         <Catering />

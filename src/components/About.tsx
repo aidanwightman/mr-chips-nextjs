@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import FadeIn from './FadeIn';
 
 const stats = [
@@ -16,11 +17,14 @@ export default function About() {
           {/* Image */}
           <FadeIn>
             <div className="relative">
-              <div className="aspect-[3/4] bg-[#F5EDD0] rounded-2xl border-2 border-dashed border-[#D4A017] flex items-center justify-center overflow-hidden">
-                <div className="text-center text-[#645659] text-sm flex flex-col gap-3">
-                  <span className="text-5xl">👨‍🍳</span>
-                  <span>Danilo&apos;s photo<br />coming soon</span>
-                </div>
+              <div className="aspect-[3/4] rounded-2xl overflow-hidden relative">
+                <Image
+                  src="/images/insta-photo-1.png"
+                  alt="Mr Chips signature potato skewer"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
               </div>
               {/* Poptata-style label badge */}
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#F5C518] rounded-full flex flex-col items-center justify-center shadow-2xl leading-none">

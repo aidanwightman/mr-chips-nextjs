@@ -72,6 +72,18 @@ export default function Gallery() {
                 loading="lazy"
               />
             </div>
+
+            {/* Potato skewer */}
+            <div className="img-zoom rounded-2xl overflow-hidden bg-[#F5EDD0] relative aspect-square">
+              <Image
+                src="/images/insta-photo-1.png"
+                alt="Mr Chips potato skewer"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 50vw, 33vw"
+                loading="lazy"
+              />
+            </div>
           </div>
         </FadeIn>
       </div>
