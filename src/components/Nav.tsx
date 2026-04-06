@@ -42,13 +42,18 @@ export default function Nav() {
         }`}
       >
         <div className="max-w-[1240px] mx-auto px-6 flex items-center justify-between">
-          <button
-            onClick={() => scrollTo('home')}
-            className="font-[family-name:var(--font-playfair)] italic font-black text-[#F5C518] leading-none"
-            style={{ fontSize: 'clamp(1.4rem, 2.5vw, 1.8rem)' }}
-          >
-            Mr Chips.
-          </button>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => scrollTo('home')}
+              className="font-[family-name:var(--font-playfair)] italic font-black text-[#F5C518] leading-none"
+              style={{ fontSize: 'clamp(1.4rem, 2.5vw, 1.8rem)' }}
+            >
+              Mr Chips.
+            </button>
+            <span className="hidden md:block text-white/40 text-[10px] font-bold tracking-[0.18em] uppercase border-l border-white/20 pl-3">
+              Portobello Market · Notting Hill · Est. 2018
+            </span>
+          </div>
 
           {/* Desktop links */}
           <ul className="hidden md:flex items-center gap-9">

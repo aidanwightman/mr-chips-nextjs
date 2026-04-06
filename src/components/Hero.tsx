@@ -18,19 +18,12 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#2B161B] via-[#2B161B]/60 to-[#2B161B]/10" />
       </div>
 
-      {/* Top eyebrow */}
-      <div className="absolute top-0 left-0 right-0 z-10 pt-28 px-8 md:px-16 anim-1">
-        <p className="text-[#F5C518] text-xs font-bold tracking-[0.25em] uppercase">
-          Portobello Market · Notting Hill · Est. 2018
-        </p>
-      </div>
+      {/* Main content — pinned to bottom left */}
+      <div className="relative z-10 w-full max-w-[1240px] mx-auto px-8 md:px-16 pb-24 md:pb-32 pt-[60vh]">
 
-      {/* Main content — pinned to bottom left, Poptata-style */}
-      <div className="relative z-10 w-full max-w-[1240px] mx-auto px-8 md:px-16 pb-20 md:pb-28">
-
-        {/* Giant serif headline — Poptata's signature move */}
-        <h1 className="anim-2 font-[family-name:var(--font-playfair)] italic font-black leading-[0.88] mb-6 text-white"
-          style={{ fontSize: 'clamp(5rem, 16vw, 14rem)' }}>
+        {/* Hero headline */}
+        <h1 className="anim-2 font-[family-name:var(--font-playfair)] italic font-black leading-[0.9] mb-6 text-white"
+          style={{ fontSize: 'clamp(3.5rem, 10vw, 8rem)' }}>
           Mr<br />
           <span className="text-[#F5C518]">Chips.</span>
         </h1>
