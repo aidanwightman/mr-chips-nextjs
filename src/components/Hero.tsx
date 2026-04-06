@@ -19,11 +19,11 @@ export default function Hero() {
       </div>
 
       {/* Main content — pinned to bottom left */}
-      <div className="relative z-10 w-full px-8 md:px-16 pb-16 md:pb-24">
+      <div className="relative z-10 w-full px-8 md:px-16 pt-28 pb-16 md:pb-24">
 
         {/* Hero headline */}
         <h1 className="anim-2 font-[family-name:var(--font-playfair)] italic font-black leading-[0.88] mb-6 text-white"
-          style={{ fontSize: 'clamp(5rem, 18vw, 16rem)' }}>
+          style={{ fontSize: 'clamp(4rem, 13vw, 11rem)' }}>
           Mr<br />
           <span className="text-[#F5C518]">Chips.</span>
         </h1>
