@@ -16,8 +16,15 @@ export default function Footer() {
               Notting Hill&apos;s finest chips since 2018. Find us at Portobello Market or book us for your next event.
             </p>
             <div className="flex gap-3">
-              {[['IG', 'Instagram'], ['FB', 'Facebook'], ['TK', 'TikTok']].map(([short, label]) => (
-                <a key={label} href="#" aria-label={label}
+              {[
+                ['IG', 'Instagram', 'https://www.instagram.com/mr.chips.uk'],
+                ['WA', 'WhatsApp', 'https://wa.me/447867850713'],
+                ['FB', 'Facebook', '#'],
+                ['TK', 'TikTok', '#'],
+              ].map(([short, label, href]) => (
+                <a key={label} href={href} aria-label={label}
+                  target={href !== '#' ? '_blank' : undefined}
+                  rel={href !== '#' ? 'noopener noreferrer' : undefined}
                   className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white/50 hover:bg-[#F5C518] hover:text-[#2B161B] transition-all text-xs font-bold">
                   {short}
                 </a>

@@ -13,7 +13,13 @@ const details = [
     icon: '📞',
     title: 'Call / WhatsApp',
     href: 'tel:+447867850713',
-    lines: ['+44 786 785 0713'],
+    lines: ['07867 850713'],
+  },
+  {
+    icon: '📸',
+    title: 'Instagram',
+    href: 'https://www.instagram.com/mr.chips.uk',
+    lines: ['@mr.chips.uk'],
   },
   {
     icon: '✉️',
@@ -68,7 +74,10 @@ export default function Contact() {
                       {d.title}
                     </strong>
                     {d.href ? (
-                      <a href={d.href} className="text-sm text-gray-400 hover:text-[#C0392B] transition-colors">
+                      <a href={d.href}
+                        target={d.href.startsWith('http') ? '_blank' : undefined}
+                        rel={d.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                        className="text-sm text-gray-400 hover:text-[#C0392B] transition-colors">
                         {d.lines[0]}
                       </a>
                     ) : (
