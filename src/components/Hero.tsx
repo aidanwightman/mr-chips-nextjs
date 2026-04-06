@@ -1,19 +1,19 @@
-import Image from 'next/image';
 import ScrollButton from './ScrollButton';
 
 export default function Hero() {
   return (
     <section id="home" className="relative min-h-[100dvh] flex items-end overflow-hidden bg-[#2B161B]">
-      {/* Background image */}
+      {/* Background video */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/food-spread.jpg"
-          alt="Mr Chips food spread"
-          fill
-          className="object-cover object-center"
-          priority
-          sizes="100vw"
-        />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/videos/hero-1.mp4" type="video/mp4" />
+        </video>
         {/* Gradient: dark at bottom where text lives, subtle at top */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#2B161B] via-[#2B161B]/60 to-[#2B161B]/10" />
       </div>
