@@ -38,16 +38,16 @@ export default function Nav() {
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? 'bg-[#1A1A1A] shadow-2xl py-3' : 'py-5'
+          scrolled ? 'bg-[#2B161B] shadow-2xl py-3' : 'py-5'
         }`}
       >
         <div className="max-w-[1240px] mx-auto px-6 flex items-center justify-between">
           <button
             onClick={() => scrollTo('home')}
-            className="font-[family-name:var(--font-bebas)] text-3xl tracking-wider leading-none"
+            className="font-[family-name:var(--font-playfair)] italic font-black text-[#F5C518] leading-none"
+            style={{ fontSize: 'clamp(1.4rem, 2.5vw, 1.8rem)' }}
           >
-            <span className="text-white">Mr</span>
-            <span className="text-[#F5C518]">Chips</span>
+            Mr Chips.
           </button>
 
           {/* Desktop links */}
@@ -93,7 +93,7 @@ export default function Nav() {
         onClick={() => toggleMenu(false)}
       />
       <div
-        className={`fixed top-0 right-0 h-full w-72 bg-[#1A1A1A] z-[2000] pt-20 px-10 pb-10 transition-transform duration-[350ms] ease-[cubic-bezier(0.4,0,0.2,1)] ${
+        className={`fixed top-0 right-0 h-full w-72 bg-[#2B161B] z-[2000] pt-20 px-10 pb-10 transition-transform duration-[350ms] ease-[cubic-bezier(0.4,0,0.2,1)] ${
           menuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >

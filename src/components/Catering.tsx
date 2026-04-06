@@ -11,7 +11,7 @@ const services = [
   {
     icon: '🎪',
     title: 'Festival Catering',
-    desc: 'We thrive in the festival environment. Fast service, massive portions, and energy that matches the crowd. Perfect fit.',
+    desc: 'We thrive in the festival environment. Fast service, massive portions, and energy that matches the crowd.',
     detail: 'Contact us to discuss your event',
     highlight: true,
   },
@@ -31,45 +31,43 @@ const services = [
 
 export default function Catering() {
   return (
-    <section id="catering" className="py-28 bg-[#1A1A1A] relative overflow-hidden">
-      {/* Background word */}
-      <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-[family-name:var(--font-bebas)] text-white/[0.02] whitespace-nowrap pointer-events-none tracking-wider select-none"
-        style={{ fontSize: 'clamp(8rem, 18vw, 20rem)' }}
-        aria-hidden="true"
-      >
-        CATERING
+    <section id="catering" className="bg-[#2B161B] overflow-hidden">
+
+      {/* Poptata-style: full-width typographic banner */}
+      <div className="border-b border-white/10 overflow-hidden">
+        <div className="max-w-[1240px] mx-auto px-8 md:px-16 py-24 md:py-36">
+          <FadeIn>
+            <p className="text-xs font-bold tracking-[0.2em] uppercase text-[#F5C518] mb-5">
+              We Go Where The Party Is
+            </p>
+            <h2 className="font-[family-name:var(--font-playfair)] italic font-black text-white leading-[0.85]"
+              style={{ fontSize: 'clamp(3.5rem, 10vw, 9rem)' }}>
+              Catering &<br />
+              <span className="text-[#F5C518]">Events.</span>
+            </h2>
+          </FadeIn>
+        </div>
       </div>
 
-      <div className="max-w-[1240px] mx-auto px-6 relative z-10">
-        <FadeIn className="mb-14">
-          <p className="text-xs font-bold tracking-[0.15em] uppercase text-[#F5C518] mb-3">
-            We Go Where The Party Is
-          </p>
-          <h2 className="font-[family-name:var(--font-bebas)] text-[clamp(2.5rem,5vw,4rem)] leading-none tracking-wider mb-4 text-white">
-            Catering &amp; Events
-          </h2>
-          <p className="text-white/50 max-w-md">
-            From market mornings to festival stages — we bring the chips to you.
-          </p>
-        </FadeIn>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-14">
+      {/* Service cards */}
+      <div className="max-w-[1240px] mx-auto px-8 md:px-16 py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
           {services.map((s, i) => (
             <FadeIn key={s.title} delay={i * 80}>
-              <div
-                className={`rounded-3xl p-8 border h-full transition-all duration-250 hover:-translate-y-1 ${
-                  s.highlight
-                    ? 'bg-[#C0392B] border-[#9B2335] hover:bg-[#9B2335]'
-                    : 'bg-white/5 border-white/10 hover:bg-white/8 hover:border-[#F5C518]/30'
-                }`}
-              >
-                <div className="text-4xl mb-4">{s.icon}</div>
-                <h3 className="font-[family-name:var(--font-bebas)] text-2xl text-white tracking-wider mb-3">
+              <div className={`rounded-2xl p-8 h-full transition-all duration-250 hover:-translate-y-1 border ${
+                s.highlight
+                  ? 'bg-[#F5C518] border-[#D4A017]'
+                  : 'bg-white/5 border-white/10 hover:bg-white/8 hover:border-[#F5C518]/30'
+              }`}>
+                <div className="text-4xl mb-5">{s.icon}</div>
+                <h3 className={`font-[family-name:var(--font-playfair)] italic font-bold mb-3 ${s.highlight ? 'text-[#2B161B]' : 'text-white'}`}
+                  style={{ fontSize: 'clamp(1.3rem, 2vw, 1.6rem)' }}>
                   {s.title}
                 </h3>
-                <p className="text-white/60 text-sm leading-relaxed mb-4">{s.desc}</p>
-                <p className="text-[#F5C518] text-[11px] font-bold uppercase tracking-wider">
+                <p className={`text-sm leading-relaxed mb-4 ${s.highlight ? 'text-[#2B161B]/70' : 'text-white/55'}`}>
+                  {s.desc}
+                </p>
+                <p className={`text-[11px] font-bold uppercase tracking-wider ${s.highlight ? 'text-[#C0392B]' : 'text-[#F5C518]'}`}>
                   {s.detail}
                 </p>
               </div>
@@ -77,13 +75,14 @@ export default function Catering() {
           ))}
         </div>
 
-        <FadeIn className="text-center">
-          <p className="text-white/40 text-xs font-bold uppercase tracking-[0.1em] mb-4">
+        <FadeIn className="text-center pt-4 border-t border-white/10">
+          <p className="text-white/35 text-xs font-bold uppercase tracking-[0.12em] mb-5">
             Got an event coming up?
           </p>
           <ScrollButton targetId="contact" variant="primary">Get a Quote</ScrollButton>
         </FadeIn>
       </div>
+
     </section>
   );
 }
