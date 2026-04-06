@@ -50,7 +50,7 @@ export default function Nav() {
             >
               Mr Chips.
             </button>
-            <span className="hidden md:block text-white/40 text-[10px] font-bold tracking-[0.18em] uppercase border-l border-white/20 pl-3">
+            <span className="hidden md:block text-white/70 text-[10px] font-bold tracking-[0.18em] uppercase border-l border-white/30 pl-3">
               Portobello Market · Notting Hill · Est. 2018
             </span>
           </div>
