@@ -36,7 +36,7 @@ const photos = [
 
 export default function GalleryPage() {
   return (
-    <div className="min-h-screen bg-[#2B161B]">
+    <div className="min-h-screen bg-[#2B161B] page-fade">
 
       {/* Header */}
       <div className="sticky top-0 z-50 bg-[#2B161B]/95 backdrop-blur-md border-b border-white/10 px-6 md:px-16 py-5 flex items-center justify-between">

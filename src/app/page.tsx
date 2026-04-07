@@ -7,6 +7,7 @@ import Catering from '@/components/Catering';
 import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
+import Divider from '@/components/Divider';
 
 export default function Home() {
   return (
@@ -16,11 +17,21 @@ export default function Home() {
         <Hero />
         <Marquee />
         <About />
+        {/* Dark → Cream */}
+        <Divider from="#2B161B" to="#FFF8E7" />
         <Menu />
+        {/* Cream → Dark */}
+        <Divider from="#FFF8E7" to="#2B161B" flip />
         <Catering />
+        {/* Dark → White */}
+        <Divider from="#2B161B" to="#ffffff" />
         <Testimonials />
+        {/* White → Cream */}
+        <Divider from="#ffffff" to="#FFF8E7" flip />
         <Contact />
       </main>
+      {/* Cream → Dark footer */}
+      <Divider from="#FFF8E7" to="#2B161B" />
       <Footer />
     </>
   );
