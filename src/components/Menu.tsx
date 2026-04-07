@@ -43,6 +43,15 @@ const menuItems = [
     bg: 'bg-[#2B161B]',
   },
   {
+    name: 'Mamma Meatballs',
+    tag: 'Meatballs',
+    category: 'meatballs',
+    desc: "Fresh Italian handmade polpette following Danilo's mum's recipe. A taste of home.",
+    prices: [{ label: 'Pcs', price: '£7' }, { label: 'Large', price: '£10' }],
+    emoji: '🍝',
+    bg: 'bg-[#C0392B]',
+  },
+  {
     name: 'Halloumi Combo',
     tag: 'Combos',
     category: 'combos',
@@ -58,13 +67,23 @@ const menuItems = [
     prices: [{ label: '+ Chips', price: '£9' }, { label: '+ Sweet Potato', price: '£10' }],
     img: '/burger.webp',
   },
+  {
+    name: 'Meatball Combo',
+    tag: 'Combos',
+    category: 'combos',
+    desc: "Mamma's meatballs with classic chips or sweet potato fries. Italian street food done right.",
+    prices: [{ label: '+ Chips', price: '£9' }, { label: '+ Sweet Potato', price: '£10' }],
+    emoji: '🍝',
+    bg: 'bg-[#C0392B]',
+  },
 ];
 
 const tabs = [
   { label: 'All', filter: 'all' },
   { label: 'Chips & Fries', filter: 'chips' },
-  { label: 'Combos', filter: 'combos' },
   { label: 'Chicken', filter: 'chicken' },
+  { label: 'Meatballs', filter: 'meatballs' },
+  { label: 'Combos', filter: 'combos' },
 ];
 
 export default function Menu() {
