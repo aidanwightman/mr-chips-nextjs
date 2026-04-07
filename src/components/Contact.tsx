@@ -95,7 +95,7 @@ export default function Contact() {
           <FadeIn delay={100}>
             <div className="bg-white rounded-3xl p-10 shadow-2xl">
               <form onSubmit={handleSubmit} noValidate>
-                <div className="grid grid-cols-2 gap-4 mb-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                   <div className="flex flex-col gap-2">
                     <label className="text-[11px] font-bold uppercase tracking-wider text-[#1A1A1A]" htmlFor="name">
                       Your Name
@@ -118,7 +118,7 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 mb-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                   <div className="flex flex-col gap-2">
                     <label className="text-[11px] font-bold uppercase tracking-wider text-[#1A1A1A]" htmlFor="type">
                       Enquiry Type

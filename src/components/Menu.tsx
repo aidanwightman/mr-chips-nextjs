@@ -113,14 +113,16 @@ export default function Menu() {
                   <span className="text-[10px] font-bold uppercase tracking-wider text-[#C0392B] w-24 shrink-0 hidden sm:block">
                     {item.tag}
                   </span>
-                  <span className="font-[family-name:var(--font-playfair)] italic font-bold text-[#2B161B] text-lg">
-                    {item.name}
-                  </span>
-                  {item.badge && (
-                    <span className="bg-[#C0392B] text-white text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
-                      {item.badge}
+                  <div className="flex flex-col gap-0.5">
+                    <span className="font-[family-name:var(--font-playfair)] italic font-bold text-[#2B161B] text-base sm:text-lg">
+                      {item.name}
                     </span>
-                  )}
+                    {item.badge && (
+                      <span className="self-start bg-[#C0392B] text-white text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">
+                        {item.badge}
+                      </span>
+                    )}
+                  </div>
                 </div>
                 <div className="flex gap-4 text-sm text-[#645659] shrink-0 ml-4">
                   {item.prices.map(p => (

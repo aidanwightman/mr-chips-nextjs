@@ -62,7 +62,7 @@ export default function About() {
               Two market stalls. One restaurant. Hundreds of weddings, festivals and events. Always the same boundless energy.
             </p>
 
-            <div className="grid grid-cols-4 gap-4 mt-12 pt-12 border-t border-white/20">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 pt-12 border-t border-white/20">
               {stats.map(s => (
                 <div key={s.label} className="text-center">
                   <strong className="block font-[family-name:var(--font-playfair)] italic font-black text-[#F5C518] leading-none mb-1"
