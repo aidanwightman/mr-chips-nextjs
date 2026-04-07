@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import FadeIn from './FadeIn';
+// import FadeIn from './FadeIn'; // disabled
 
 const images = [
   { src: '/food-spread.jpg', alt: 'Mr Chips food spread', large: true },

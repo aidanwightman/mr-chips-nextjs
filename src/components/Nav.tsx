@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -31,7 +32,6 @@ export default function Nav() {
     { label: 'Menu', id: 'menu' },
     { label: 'About', id: 'about' },
     { label: 'Catering', id: 'catering' },
-    { label: 'Gallery', id: 'gallery' },
   ];
 
   return (
@@ -67,6 +67,14 @@ export default function Nav() {
                 </button>
               </li>
             ))}
+            <li>
+              <Link
+                href="/gallery"
+                className="text-white/80 hover:text-[#F5C518] text-xs font-bold tracking-widest uppercase transition-colors"
+              >
+                Gallery
+              </Link>
+            </li>
             <li>
               <button
                 onClick={() => scrollTo('contact')}
@@ -120,6 +128,15 @@ export default function Nav() {
               </button>
             </li>
           ))}
+          <li>
+            <Link
+              href="/gallery"
+              className="font-[family-name:var(--font-bebas)] text-4xl text-white hover:text-[#F5C518] tracking-wider transition-colors"
+              onClick={() => toggleMenu(false)}
+            >
+              Gallery
+            </Link>
+          </li>
         </ul>
       </div>
     </>

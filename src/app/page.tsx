@@ -4,7 +4,6 @@ import Marquee from '@/components/Marquee';
 import About from '@/components/About';
 import Menu from '@/components/Menu';
 import Catering from '@/components/Catering';
-import Gallery from '@/components/Gallery';
 import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
@@ -19,7 +18,6 @@ export default function Home() {
         <About />
         <Menu />
         <Catering />
-        <Gallery />
         <Testimonials />
         <Contact />
       </main>
