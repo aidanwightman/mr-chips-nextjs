@@ -60,13 +60,6 @@ const menuItems = [
   },
 ];
 
-const sauces = ['Onion', 'Garlic', 'BBQ', 'Spicy', 'Ketchup', 'Mayo'];
-const extras = [
-  { name: 'Truffle Mayo', price: '+£1' },
-  { name: 'Whiskey Mayo', price: '+£1' },
-  { name: 'Special Gravy', price: '+£1' },
-];
-
 const tabs = [
   { label: 'All', filter: 'all' },
   { label: 'Chips & Fries', filter: 'chips' },
@@ -164,43 +157,6 @@ export default function Menu() {
             </FadeIn>
           ))}
         </div>
-
-        {/* Sauces & Extras */}
-        <FadeIn className="mt-20">
-          <div className="bg-[#2B161B] rounded-3xl p-10 md:p-14">
-            <div className="flex flex-col md:flex-row gap-10">
-              <div className="flex-1">
-                <h3 className="font-[family-name:var(--font-playfair)] italic font-bold text-[#F5C518] mb-1"
-                  style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}>
-                  Signature Sauces
-                </h3>
-                <p className="text-white/40 text-xs font-bold uppercase tracking-wider mb-6">Included with every order</p>
-                <div className="flex flex-wrap gap-2.5">
-                  {sauces.map(s => (
-                    <span key={s} className="bg-white/8 border border-white/15 text-white text-sm font-medium px-4 py-2 rounded-full">
-                      {s}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <div className="w-px bg-white/10 hidden md:block" />
-              <div className="flex-1">
-                <h3 className="font-[family-name:var(--font-playfair)] italic font-bold text-[#F5C518] mb-1"
-                  style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)' }}>
-                  Premium Add-ons
-                </h3>
-                <p className="text-white/40 text-xs font-bold uppercase tracking-wider mb-6">Upgrade your order</p>
-                <div className="flex flex-wrap gap-2.5">
-                  {extras.map(e => (
-                    <span key={e.name} className="bg-[#F5C518]/12 border border-[#F5C518]/25 text-white text-sm font-medium px-4 py-2 rounded-full">
-                      {e.name} <strong className="text-[#F5C518]">{e.price}</strong>
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </FadeIn>
 
       </div>
     </section>
