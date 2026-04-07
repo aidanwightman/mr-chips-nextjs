@@ -28,11 +28,10 @@ export default function About() {
           {/* Placeholder for Danilo's photo */}
           <FadeIn>
             <div className="relative">
-              <div className="aspect-[3/4] bg-white/10 rounded-2xl border-2 border-dashed border-white/30 flex items-center justify-center overflow-hidden">
-                <div className="text-center text-white/50 text-sm flex flex-col gap-3">
-                  <span className="text-5xl">👨‍🍳</span>
-                  <span>Danilo&apos;s photo<br />coming soon</span>
-                </div>
+              <div className="aspect-[3/4] rounded-2xl overflow-hidden">
+                <video autoPlay muted loop playsInline className="w-full h-full object-cover">
+                  <source src="/videos/dani.mp4" type="video/mp4" />
+                </video>
               </div>
               <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#F5C518] rounded-full flex flex-col items-center justify-center shadow-2xl leading-none">
                 <span className="text-[9px] font-bold uppercase tracking-widest text-[#2B161B]">Since</span>
