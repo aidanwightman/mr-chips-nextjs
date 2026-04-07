@@ -114,7 +114,7 @@ export default function Menu() {
                     {item.tag}
                   </span>
                   <div className="flex flex-col gap-0.5">
-                    <span className="font-[family-name:var(--font-playfair)] italic font-bold text-[#2B161B] text-base sm:text-lg">
+                    <span className="font-[family-name:var(--font-playfair)] italic font-bold text-[#2B161B] text-sm sm:text-lg">
                       {item.name}
                     </span>
                     {item.badge && (
@@ -124,7 +124,7 @@ export default function Menu() {
                     )}
                   </div>
                 </div>
-                <div className="flex gap-4 text-sm text-[#645659] shrink-0 ml-4">
+                <div className="flex gap-2 sm:gap-4 text-xs sm:text-sm text-[#645659] shrink-0 ml-2 sm:ml-4">
                   {item.prices.map(p => (
                     <span key={p.label} className="flex items-center gap-1">
                       {p.label && <span className="text-[#645659]/60">{p.label}</span>}
